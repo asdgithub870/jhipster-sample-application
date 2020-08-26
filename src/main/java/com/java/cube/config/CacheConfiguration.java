@@ -47,6 +47,18 @@ public class CacheConfiguration {
             createCache(cm, com.java.cube.domain.User.class.getName());
             createCache(cm, com.java.cube.domain.Authority.class.getName());
             createCache(cm, com.java.cube.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.java.cube.domain.Region.class.getName());
+            createCache(cm, com.java.cube.domain.Country.class.getName());
+            createCache(cm, com.java.cube.domain.Location.class.getName());
+            createCache(cm, com.java.cube.domain.Department.class.getName());
+            createCache(cm, com.java.cube.domain.Department.class.getName() + ".employees");
+            createCache(cm, com.java.cube.domain.Task.class.getName());
+            createCache(cm, com.java.cube.domain.Task.class.getName() + ".jobs");
+            createCache(cm, com.java.cube.domain.Employee.class.getName());
+            createCache(cm, com.java.cube.domain.Employee.class.getName() + ".jobs");
+            createCache(cm, com.java.cube.domain.Job.class.getName());
+            createCache(cm, com.java.cube.domain.Job.class.getName() + ".tasks");
+            createCache(cm, com.java.cube.domain.JobHistory.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
